@@ -25,17 +25,13 @@
     <link rel="stylesheet" href="https://jhung.github.io/cupper-test/css/prism.css" media="none" onload="this.media='all';">
     <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/css/styles.css">
 
+    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/lib/normalize/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/core/css/fluid.css">
+    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/preferences/css/Enactors.css">
+    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/preferences/css/PrefsEditor.css">
+    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css">
 
-    
-    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/lib/normalize/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/core/css/fluid.css" />
-    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/preferences/css/Enactors.css" />
-    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/preferences/css/PrefsEditor.css" />
-    <link rel="stylesheet" type="text/css" href="https://jhung.github.io/cupper-test/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />'
-
-    
-    <script type="text/javascript" src="https://jhung.github.io/cupper-test/infusion/infusion-all.js"></script>
-
+    <script src="https://jhung.github.io/cupper-test/infusion/infusion-all.js"></script>
 
     <style id="inverter" media="none">
       html { filter: invert(100%) }
@@ -50,17 +46,25 @@
     
   </head>
   <body>
-      <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
-          
-          <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
-          
-          <div class="fl-panelBar">
-              <span class="fl-prefsEditor-buttons">
-                  <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
-                  <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
-              </span>
-          </div>
-      </div>
+
+    
+    <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+        
+        <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+        
+        <div class="fl-panelBar">
+            <span class="fl-prefsEditor-buttons">
+                <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset">
+                    <span class="fl-icon-undo"></span>
+                    Reset
+                </button>
+                <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">
+                    Show/Hide
+                </button>
+            </span>
+        </div>
+    </div>
+
 
     
       <a href="#main">skip to content</a>
@@ -524,22 +528,21 @@ The components of a good wayfinding system can be grouped into two categories: d
       </div>
     </div>
 
-
-    
-        <script type="text/javascript">
-            $(document).ready(function () {
-                fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-                    tocTemplate: "lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
-                    terms: {
-                        templatePrefix: "lib/infusion/src/framework/preferences/html",
-                        messagePrefix: "lib/infusion/src/framework/preferences/messages"
-                    }
-                });
-            })
-        </script>
-
     <script src="https://jhung.github.io/cupper-test/js/prism.js"></script>
     <script src="https://jhung.github.io/cupper-test/js/dom-scripts.js"></script>
     
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                tocTemplate: "infusion/src/components/tableOfContents/html/TableOfContents.html",
+                terms: {
+                    templatePrefix: "infusion/src/framework/preferences/html",
+                    messagePrefix: "infusion/src/framework/preferences/messages"
+                }
+            });
+        })
+    </script>
   </body>
 </html>
