@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/patterns/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/patterns/architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/patterns/visitor-supports/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/print-version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/patterns/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jhung.github.io/cupper-test/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CMHR IAD Guide (Test) on Cupper Test</title>
+    <link>https://jhung.github.io/cupper-test/</link>
+    <description>Recent content in CMHR IAD Guide (Test) on Cupper Test</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jhung.github.io/cupper-test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://jhung.github.io/cupper-test/patterns/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jhung.github.io/cupper-test/patterns/introduction/</guid>
+      <description>From its inception, the Canadian Museum of Human Rights (CMHR) was conceived as a space that would be welcoming to the most diverse of audiences. Our goal was to ensure that any member of the public, regardless of age, background or ability, could fully experience all aspects of the Museum.
+We have achieved that goal by recognizing that this pursuit will never be finished. Instead of reaching a conclusion, we have instead put into practice a system of iterative evolution and progression.</description>
+    </item>
+    
+    <item>
+      <title>Architecture</title>
+      <link>https://jhung.github.io/cupper-test/patterns/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jhung.github.io/cupper-test/patterns/architecture/</guid>
+      <description>The Canadian Museum for Human Rights’ architectural design is intended to “create a path for the visitor from darkness to light, and its signature architecture symbolizes hope for a changed world,” said the CMHR’s award-winning architect Antoine Predock.
+Mr. Predock’s concept for the Museum drew inspiration from Canadian landscapes of vast prairie skies, snow, icebergs and northern lights. His design was also inspired by Canadian cultures, including Indigenous cultures, as well as imagery of tree roots and outstretched wings.</description>
+    </item>
+    
+    <item>
+      <title>Visitor Supports</title>
+      <link>https://jhung.github.io/cupper-test/patterns/visitor-supports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jhung.github.io/cupper-test/patterns/visitor-supports/</guid>
+      <description>The CMHR is committed to providing an inclusively designed and accessible experience for all visitors. A variety of supports are available to ensure visitors enjoy equal and effortless access to our facilities and exhibits in comfort. Through our ongoing, comprehensive staff training, we ensure that interpretive programming and visitor interactions are inclusive, meeting or exceeding current accessibility standards.
+Support Persons Admission is free for one person accompanying a person with special needs.</description>
+    </item>
+    
+    <item>
+      <title>Cupper</title>
+      <link>https://jhung.github.io/cupper-test/print-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jhung.github.io/cupper-test/print-version/</guid>
+      <description>You don&amp;rsquo;t want to edit this file :-)</description>
+    </item>
+    
+  </channel>
+</rss>
