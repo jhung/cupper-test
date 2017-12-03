@@ -24,6 +24,19 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet" media="none" onload="this.media='all';">
     <link rel="stylesheet" href="{{ "css/prism.css" | absURL }}" media="none" onload="this.media='all';">
     <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | absURL }}">
+
+
+    <!-- UI Options CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ "infusion/src/lib/normalize/css/normalize.css" | absURL}}" />
+    <link rel="stylesheet" type="text/css" href="{{ "infusion/src/framework/core/css/fluid.css" | absURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "infusion/src/framework/preferences/css/Enactors.css" | absURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "infusion/src/framework/preferences/css/PrefsEditor.css" | absURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" | absURL }}" />'
+
+    <!-- The Infusion Library -->
+    <script type="text/javascript" src="{{ "infusion/infusion-all.js" | absURL }}"></script>
+
+
     <style id="inverter" media="none">
       html { filter: invert(100%) }
       * { background-color: inherit }
@@ -39,6 +52,18 @@
     {{ end }}
   </head>
   <body>
+      <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+          <!-- This is the div that will contain the Preference Editor component -->
+          <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+          <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+          <div class="fl-panelBar">
+              <span class="fl-prefsEditor-buttons">
+                  <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                  <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+              </span>
+          </div>
+      </div>
+
     {{ if ne .Type "print-version" }}
       <a href="#main">skip to content</a>
     {{ end }}
@@ -130,6 +155,21 @@
         </div>
       </div>
     </div>
+
+
+    <!-- Initialize the UI Options Javascript -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                    tocTemplate: "lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                    terms: {
+                        templatePrefix: "lib/infusion/src/framework/preferences/html",
+                        messagePrefix: "lib/infusion/src/framework/preferences/messages"
+                    }
+                });
+            })
+        </script>
+
     <script src="{{ "js/prism.js" | absURL }}"></script>
     <script src="{{ "js/dom-scripts.js" | absURL }}"></script>
     {{ if .Page.IsHome }}
